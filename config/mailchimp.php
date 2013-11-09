@@ -12,5 +12,5 @@
  * api_endpoint            
  */
 
-$config['api_key'] = '';
-$config['api_endpoint'] = '';
+$config['api_key'] = ''; //required: your API here
+$config['api_endpoint'] = ''; //optional: if you don't know it then we'll get it taken care of in the library file

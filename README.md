@@ -11,16 +11,16 @@ Examples
 List lists (lists/list method)
 
 	<?php
-	$this->load->library('Mailchimp_library');
-	$lists = $this->Mailchimp_library->call('lists/list');
+	$this->load->library('mailchimp_library');
+	$lists = $this->mailchimp_library->call('lists/list');
 	var_dump($lists):
 
 Subscribe someone to a list
 
 	<?php
-	$this->load->library('Mailchimp_library');
-	$result = $this->Mailchimp_library->call('lists/subscribe', array(
-					'id'                => 'b1234346',
+	$this->load->library('mailchimp_library');
+	$result = $this->mailchimp_library->call('lists/subscribe', array(
+					'id'                => 'b1234346',   // list id
 					'email'             => array('email'=>'davy@example.com'),
 					'merge_vars'        => array('FNAME'=>'Davy', 'LNAME'=>'Jones'),
 					'double_optin'      => false,
